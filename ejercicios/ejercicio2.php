@@ -5,11 +5,11 @@
             <!-- se utiliza para definir la codificación de caracteres del documento HTML. En este caso, el atributo
             charset se establece en "utf-8", que es una codificación de caracteres universalmente reconocida y compatible
             con una amplia gama de caracteres y símbolos utilizados en varios idiomas y sistemas de escritura.-->
-        <title>UDEMY - Aprendiendo PHP</title>
+        <title>Segundo Ejercicio</title>
             <!--se utiliza para definir el título de la página web. El texto que se coloca dentro de esta etiqueta
             aparecerá en la barra de título del navegador y también se mostrará en los resultados de búsqueda
             cuando la página web se encuentre en los motores de búsqueda.-->
-        <meta content="Aprendiendo PHP" name="description">
+        <meta content="Aprendiendo PHP, ejercicio 2" name="description">
             <!--Esta etiqueta define la descripción de la página para los motores de búsqueda y otros servicios que pueden
             usar esta información. La descripción proporcionada, en este caso "Aprendiendo PHP", se mostrará en los
             resultados de búsqueda o en vistas previas cuando alguien comparta el enlace a la página en redes sociales,
@@ -127,74 +127,15 @@
                 font-weight: 600;
                 font-size: 16px;
             }
+            h2 a {
+                margin: 10px;
+            }
         </style>
     </head>
     <body>
         <nav class="navbar">
-            <img class="php-img" src="img/php.png" width="50"></a><label id="navbar-label">Aprendiendo PHP</label>
+            <img class="php-img" src="../img/php.png" width="50"></a><label id="navbar-label">Aprendiendo PHP</label>
         </nav>
-            <?php
-                // Constantes en PHP y su declaracion.
-                define('name','Marcos Segovia');
-                define('web','kacosegovia.com');
-                echo '<h1>'.name.' - '.web.'<hr/>';
-                echo '<h3><a href="formulario.php" title="formulario">Ingresa tus datos</a></h3>';
-                // Variables de PHP y cómo declararlas.
-                $consola1 = 'Super Nintendo (SNES)';
-                $consola2 = 'Nintendo 64 (N64)';
-                $verdadero = true;
-            ?>
-        <div class="page-content">
-            <div class="content-wrapper">
-                <div class="content">
-                    <?php
-                        // Metodo para imprimir en pantalla usando comillas dobles.
-                        echo "<h2>Listado de Juegos</h2><br>
-                        <h3>$consola1</h3>
-                        <ul><li>Super Mario All Stars + Super Mario World</li>
-                        <li>Donkey Kong Country</li>
-                        <li>The Legend of Zelda - A link to the past</li></ul><br>";
-                        // Metodo para imprimir en pantalla usando concatenación.
-                        echo '<h3>'.$consola2.'</h3>
-                        <ul><li>Super Mario 64</li>
-                        <li>The Legend of Zelda - Ocarina of Time</li>
-                        <li>Mario Kart 64</li></ul><br>';
-                        echo '<p>Lista actualizada al '.date('d/m/Y').'</p><br/><br/>';
-                    ?>
-                </div>   
-                <div class="content">
-                    <?php
-                        // Operadores aritmeticos
-                        $num1=12;
-                        $num2=17;
-                        echo '<div><h2>Operaciones Aritméticas</h2><br><br>';
-                        echo 'Primer número: '.$num1.'<br/>';
-                        echo 'Segundo número: '.$num2.'<br/><br/>';
-                        echo 'Suma: '.($num1+$num2).'<br/>';
-                        echo 'Resta: '.($num1-$num2).'<br/>';
-                        echo 'Multiplicación: '.($num1*$num2).'<br/>';
-                        echo 'División: '.($num1/$num2).'<br/>';
-                        echo 'Sobrante o resto: '.($num1%$num2).'<br/></div>';
-                    ?>
-                </div>
-                <div class="content">
-                    <?php
-                        // Metodo para imprimir en pantalla usando comillas dobles.
-                        echo '<h2>Ejercicios</h2><br>
-                        <ul><li><a href="ejercicios/ejercicio1.php" title="Primer Ejercicio">Ejercicio 1 (variables)</a></li>
-                        <li><a href="ejercicios/ejercicio2.php" title="Segundo Ejercicio">Ejercicio 2</a></li>
-                        <li><a href="ejercicios/ejercicio3.php" title="Tercer Ejercicio">Ejercicio 3</a></li></ul>';
-                    ?>
-                </div>
-            </div>
-        </div>
+        <h2><a href="../index.php" title="inicio">Volver...</a></h2><br/>
     </body>
-    <footer class="footer">
-         <?php            
-            // Funcion que imprime datos de variables.
-            var_dump($num1);            
-            // Constantes predefinidas de PHP.
-            echo PHP_OS.' - PHP '.PHP_VERSION.' - '.__LINE__.' - '.__FILE__;
-        ?>
-    </footer>    
 </html>
