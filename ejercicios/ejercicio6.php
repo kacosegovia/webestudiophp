@@ -5,11 +5,11 @@
             <!-- se utiliza para definir la codificación de caracteres del documento HTML. En este caso, el atributo
             charset se establece en "utf-8", que es una codificación de caracteres universalmente reconocida y compatible
             con una amplia gama de caracteres y símbolos utilizados en varios idiomas y sistemas de escritura.-->
-        <title>Segundo Ejercicio</title>
+        <title>Tercer Ejercicio</title>
             <!--se utiliza para definir el título de la página web. El texto que se coloca dentro de esta etiqueta
             aparecerá en la barra de título del navegador y también se mostrará en los resultados de búsqueda
             cuando la página web se encuentre en los motores de búsqueda.-->
-        <meta content="Aprendiendo PHP, ejercicio 2" name="description">
+        <meta content="Aprendiendo PHP, ejercicio 3" name="description">
             <!--Esta etiqueta define la descripción de la página para los motores de búsqueda y otros servicios que pueden
             usar esta información. La descripción proporcionada, en este caso "Aprendiendo PHP", se mostrará en los
             resultados de búsqueda o en vistas previas cuando alguien comparta el enlace a la página en redes sociales,
@@ -58,7 +58,7 @@
             h3 {
                 font-size: 20px;
                 font-weight: 500;
-                margin: 10px;
+                margin-bottom: 10px;
             }
             .navbar {
                 position: relative;
@@ -136,14 +136,11 @@
         <nav class="navbar">
             <img class="php-img" src="../img/php.png" width="50"></a><label id="navbar-label">Aprendiendo PHP</label>
         </nav>
-        <h2><a href="../index.php" title="inicio">Volver...</a></h2></br>
-        <p>Escribir un Script en PHP que nos muestre por pantalla todos los numeros pares que hay de 1 al 100.</p></br>
+        <h2><a href="../index.php" title="inicio">Volver...</a></h2><br/>
+        <p>Escribir un programa que imprima por pantalla los cuadrados de los 40 primeros números naturales</p>
+        <p>PD. Utiliza bucle WHILE</p></br>
         <?php
-            for($i = 1; $i <=100;$i++){ 
-                if($i%2==0){ // Dividimos $i entre 2, si sobra 0, se muestra.
-                echo "<h3>".$i."</h3><br/>"; //Imprime $i cada vez q cumpla condición del if.
-                }
-            }
+            
         ?>
     </body>
 </html>

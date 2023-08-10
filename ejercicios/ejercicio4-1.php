@@ -5,11 +5,11 @@
             <!-- se utiliza para definir la codificación de caracteres del documento HTML. En este caso, el atributo
             charset se establece en "utf-8", que es una codificación de caracteres universalmente reconocida y compatible
             con una amplia gama de caracteres y símbolos utilizados en varios idiomas y sistemas de escritura.-->
-        <title>Segundo Ejercicio</title>
+        <title>Tercer Ejercicio</title>
             <!--se utiliza para definir el título de la página web. El texto que se coloca dentro de esta etiqueta
             aparecerá en la barra de título del navegador y también se mostrará en los resultados de búsqueda
             cuando la página web se encuentre en los motores de búsqueda.-->
-        <meta content="Aprendiendo PHP, ejercicio 2" name="description">
+        <meta content="Aprendiendo PHP, ejercicio 3" name="description">
             <!--Esta etiqueta define la descripción de la página para los motores de búsqueda y otros servicios que pueden
             usar esta información. La descripción proporcionada, en este caso "Aprendiendo PHP", se mostrará en los
             resultados de búsqueda o en vistas previas cuando alguien comparta el enlace a la página en redes sociales,
@@ -58,7 +58,7 @@
             h3 {
                 font-size: 20px;
                 font-weight: 500;
-                margin: 10px;
+                margin-bottom: 10px;
             }
             .navbar {
                 position: relative;
@@ -136,13 +136,22 @@
         <nav class="navbar">
             <img class="php-img" src="../img/php.png" width="50"></a><label id="navbar-label">Aprendiendo PHP</label>
         </nav>
-        <h2><a href="../index.php" title="inicio">Volver...</a></h2></br>
-        <p>Escribir un Script en PHP que nos muestre por pantalla todos los numeros pares que hay de 1 al 100.</p></br>
+        <h2><a href="../index.php" title="inicio">Volver...</a></h2><br/>
+        <p>Recoger dos números por la url(GET) y hacer todas las operaciones básicas de una calculadora entre ellos.</p></br>
         <?php
-            for($i = 1; $i <=100;$i++){ 
-                if($i%2==0){ // Dividimos $i entre 2, si sobra 0, se muestra.
-                echo "<h3>".$i."</h3><br/>"; //Imprime $i cada vez q cumpla condición del if.
-                }
+            if(!empty(filter_input(INPUT_GET, 'numero1', FILTER_VALIDATE_INT)) && !empty(filter_input(INPUT_GET, 'numero2', FILTER_VALIDATE_INT))){
+            $numero1 = filter_input(INPUT_GET, 'numero1', FILTER_VALIDATE_INT);
+            $numero2 = filter_input(INPUT_GET, 'numero2', FILTER_VALIDATE_INT);
+            $suma = $numero1 + $numero2;
+            $resta = $numero1 - $numero2;
+            $multiplicacion = $numero1 * $numero2;
+            $division = $numero1 / $numero2;
+            echo "<h3>La suma de ambos números es $suma</h3>";
+            echo "<h3>La resta entre ambos números es $resta</h3>";
+            echo "<h3>La división entre ambos números es $division</h3>";
+            echo "<h3>La multiplicación de ambos números es $multiplicacion</h3>";
+            }else {
+                echo "<h2>Debes introducir 2 números</h2>";
             }
         ?>
     </body>

@@ -44,7 +44,7 @@
             }
             h1, h2, h3, h4, h5, h6, p {
                 padding: 0;
-                margin: 0;
+                margin-left: 5px;
                 color:#333333;
             }
             h1 {
@@ -137,5 +137,15 @@
             <img class="php-img" src="../img/php.png" width="50"></a><label id="navbar-label">Aprendiendo PHP</label>
         </nav>
         <h2><a href="../index.php" title="inicio">Volver...</a></h2><br/>
+        <p>Escribir un programa que imprima por pantalla los cuadrados de los 40 primeros números naturales</p>
+        <p>PD. Utiliza bucle WHILE</p></br>
+        <?php
+            $i=0;
+            while($i < 40){
+                $cuadrado = $i*$i;
+                echo "<h3>El cuadrado del número $i es $cuadrado</br>";
+                $i++;
+            }
+        ?>
     </body>
 </html>

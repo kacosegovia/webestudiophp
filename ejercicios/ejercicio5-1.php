@@ -139,10 +139,18 @@
         <h2><a href="../index.php" title="inicio">Volver...</a></h2></br>
         <p>Escribir un Script en PHP que nos muestre por pantalla todos los numeros pares que hay de 1 al 100.</p></br>
         <?php
-            for($i = 1; $i <=100;$i++){ 
-                if($i%2==0){ // Dividimos $i entre 2, si sobra 0, se muestra.
-                echo "<h3>".$i."</h3><br/>"; //Imprime $i cada vez q cumpla condición del if.
+            if(!empty(filter_input(INPUT_GET, 'numero1', FILTER_VALIDATE_INT)) && !empty(filter_input(INPUT_GET, 'numero2', FILTER_VALIDATE_INT))){
+                $numero1 = filter_input(INPUT_GET, 'numero1', FILTER_VALIDATE_INT);
+                $numero2 = filter_input(INPUT_GET, 'numero2', FILTER_VALIDATE_INT);
+                if($numero1 < $numero2){
+                    for($i = $numero1;$i <= $numero2;$i++){
+                        echo "<h3>$i</h3>";
+                    }
+                }else {
+                    echo "<h3>El primer número debe ser menor que el segundo</h3>";
                 }
+            }else {
+                echo "<h2>Debes introducir 2 números</h2>";
             }
         ?>
     </body>

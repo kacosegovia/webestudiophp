@@ -44,7 +44,7 @@
             }
             h1, h2, h3, h4, h5, h6, p {
                 padding: 0;
-                margin: 0;
+                margin-left: 5px;
                 color:#333333;
             }
             h1 {
@@ -137,8 +137,8 @@
             <img class="php-img" src="../img/php.png" width="50"></a><label id="navbar-label">Aprendiendo PHP</label>
         </nav>
         <h2><a href="../index.php" title="inicio">Volver...</a></h2><br/>
-        <!--Crear 2 variables 'pais' y 'continente' y mostrar su valor por pantalla
-            Poner en un comentario qué tipo de dato contienen-->
+        <p>Crear 2 variables 'pais' y 'continente' y mostrar su valor por pantalla.<br/>
+            Poner en un comentario qué tipo de dato contiene cada uno</p></br>
         <?php
             $pais="Argentina"; //dato tipo string
             $continente="América del sur"; //dato tipo string

@@ -137,13 +137,17 @@
             <img class="php-img" src="../img/php.png" width="50"></a><label id="navbar-label">Aprendiendo PHP</label>
         </nav>
         <h2><a href="../index.php" title="inicio">Volver...</a></h2></br>
-        <p>Escribir un Script en PHP que nos muestre por pantalla todos los numeros pares que hay de 1 al 100.</p></br>
-        <?php
-            for($i = 1; $i <=100;$i++){ 
-                if($i%2==0){ // Dividimos $i entre 2, si sobra 0, se muestra.
-                echo "<h3>".$i."</h3><br/>"; //Imprime $i cada vez q cumpla condición del if.
-                }
-            }
-        ?>
-    </body>
+        <p>Hacer un script que nos muestre todos los números que hay entre 2 números recibidos por GET</p></br>
+        <h3>Ingresa 2 números</h3></br>
+            <form method="GET" action="ejercicio5-1.php" name="numeros">
+                <p>
+		<label for="numero1">Primer número</label>
+		<input type="number" name="numero1" size="2">
+                </p>    
+                <p>
+		<label for="numero2">Segundo número</label>
+		<input type="number" name="numero2" size="2">
+                </p></br>
+                <p><input type="submit" value="Enviar"/></p>
+            </form>
 </html>

@@ -127,6 +127,9 @@
                 font-weight: 600;
                 font-size: 16px;
             }
+            h3 {
+                margin-left: 5px;
+            }
         </style>
     </head>
     <body>
@@ -180,10 +183,13 @@
                 <div class="content">
                     <?php
                         // Metodo para imprimir en pantalla usando comillas dobles.
-                        echo '<h2>Ejercicios</h2><br>
+                        echo '<h2>Ejercicios resueltos</h2><br>
                         <ul><li><a href="ejercicios/ejercicio1.php" title="Primer Ejercicio">Ejercicio 1 (variables)</a></li>
-                        <li><a href="ejercicios/ejercicio2.php" title="Segundo Ejercicio">Ejercicio 2</a></li>
-                        <li><a href="ejercicios/ejercicio3.php" title="Tercer Ejercicio">Ejercicio 3</a></li></ul>';
+                        <li><a href="ejercicios/ejercicio2.php" title="Segundo Ejercicio">Ejercicio 2 (bucle FOR e IF)</a></li>
+                        <li><a href="ejercicios/ejercicio3.php" title="Tercer Ejercicio">Ejercicio 3 (bucle WHILE)</a></li>
+                        <li><a href="ejercicios/ejercicio4.php" title="Cuarto Ejercicio">Ejercicio 4 (parámetros GET)</a></li>
+                        <li><a href="ejercicios/ejercicio5.php" title="Quinto Ejercicio">Ejercicio 5 (parámetros GET 2)</a></li>
+                        <li><a href="ejercicios/ejercicio6.php" title="Sexto Ejercicio">Ejercicio 6 (bucle WHILE)</a></li></ul>';
                     ?>
                 </div>
             </div>
