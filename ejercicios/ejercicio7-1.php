@@ -5,11 +5,11 @@
             <!-- se utiliza para definir la codificación de caracteres del documento HTML. En este caso, el atributo
             charset se establece en "utf-8", que es una codificación de caracteres universalmente reconocida y compatible
             con una amplia gama de caracteres y símbolos utilizados en varios idiomas y sistemas de escritura.-->
-        <title>Sexto Ejercicio</title>
+        <title>Séptimo Ejercicio</title>
             <!--se utiliza para definir el título de la página web. El texto que se coloca dentro de esta etiqueta
             aparecerá en la barra de título del navegador y también se mostrará en los resultados de búsqueda
             cuando la página web se encuentre en los motores de búsqueda.-->
-        <meta content="Aprendiendo PHP, ejercicio 3" name="description">
+        <meta content="Aprendiendo PHP, ejercicio 2" name="description">
             <!--Esta etiqueta define la descripción de la página para los motores de búsqueda y otros servicios que pueden
             usar esta información. La descripción proporcionada, en este caso "Aprendiendo PHP", se mostrará en los
             resultados de búsqueda o en vistas previas cuando alguien comparta el enlace a la página en redes sociales,
@@ -58,7 +58,7 @@
             h3 {
                 font-size: 20px;
                 font-weight: 500;
-                margin-bottom: 10px;
+                margin: 10px;
             }
             .navbar {
                 position: relative;
@@ -130,10 +130,6 @@
             h2 a {
                 margin: 10px;
             }
-            .td {
-                padding: 5px;
-                margin: 5px;
-            }
         </style>
     </head>
     <body>
@@ -141,23 +137,23 @@
             <img class="php-img" src="../img/php.png" width="50"></a><label id="navbar-label">Aprendiendo PHP</label>
         </nav>
         <h2><a href="../index.php" title="inicio">Volver...</a></h2><br>
-        <p>Mostrar una tabla HTML con las tablas de multiplicar del 1 al 10.</p><hr/>
+        <p>Escribir un Script en PHP que nos muestre por pantalla todos los numeros pares que hay de 1 al 100.</p><hr/>
         <?php
-            echo "<table border='1'>"; //Inicio de la tabla.
-            echo "<tr>";
-                for($cabecera = 1; $cabecera <=10;$cabecera++){
-                    echo "<td>Tabla del $cabecera";
-                }
-            echo "</tr>";
-            echo "<tr>";
-                for($i = 1;$i <=10;$i++){
-                    echo "<td>";
-                        for($x = 1; $x <=10; $x++){
-                            echo "$i x $x = ".($i*$x)."<br>";
+            if(!empty(filter_input(INPUT_GET, 'numero1', FILTER_VALIDATE_INT)) && !empty(filter_input(INPUT_GET, 'numero2', FILTER_VALIDATE_INT))){
+                $numero1 = filter_input(INPUT_GET, 'numero1', FILTER_VALIDATE_INT);
+                $numero2 = filter_input(INPUT_GET, 'numero2', FILTER_VALIDATE_INT);
+                if($numero1 < $numero2){
+                    for($i = $numero1;$i <= $numero2;$i++){
+                        if($i%2!=0){
+                            echo "<h3>$i</h3>";
                         }
-                    echo "</td>";
+                    }
+                }else {
+                    echo "<h3>El primer número debe ser menor que el segundo</h3>";
                 }
-            echo "</table>"; //Fin de la tabla.
+            }else {
+                echo "<h2>Debes introducir 2 números</h2>";
+            }
         ?>
     </body>
 </html>

@@ -5,7 +5,7 @@
             <!-- se utiliza para definir la codificación de caracteres del documento HTML. En este caso, el atributo
             charset se establece en "utf-8", que es una codificación de caracteres universalmente reconocida y compatible
             con una amplia gama de caracteres y símbolos utilizados en varios idiomas y sistemas de escritura.-->
-        <title>Sexto Ejercicio</title>
+        <title>Séptimo Ejercicio</title>
             <!--se utiliza para definir el título de la página web. El texto que se coloca dentro de esta etiqueta
             aparecerá en la barra de título del navegador y también se mostrará en los resultados de búsqueda
             cuando la página web se encuentre en los motores de búsqueda.-->
@@ -141,23 +141,17 @@
             <img class="php-img" src="../img/php.png" width="50"></a><label id="navbar-label">Aprendiendo PHP</label>
         </nav>
         <h2><a href="../index.php" title="inicio">Volver...</a></h2><br>
-        <p>Mostrar una tabla HTML con las tablas de multiplicar del 1 al 10.</p><hr/>
-        <?php
-            echo "<table border='1'>"; //Inicio de la tabla.
-            echo "<tr>";
-                for($cabecera = 1; $cabecera <=10;$cabecera++){
-                    echo "<td>Tabla del $cabecera";
-                }
-            echo "</tr>";
-            echo "<tr>";
-                for($i = 1;$i <=10;$i++){
-                    echo "<td>";
-                        for($x = 1; $x <=10; $x++){
-                            echo "$i x $x = ".($i*$x)."<br>";
-                        }
-                    echo "</td>";
-                }
-            echo "</table>"; //Fin de la tabla.
-        ?>
-    </body>
+        <p>Hacer un script que nos muestre todos los números IMPARES que hay entre 2 números recibidos por GET</p><hr/>
+        <h3>Ingresa 2 números, el segundo número debe ser mayor</h3><br>
+            <form method="GET" action="ejercicio7-1.php" name="numeros">
+                <p>
+		<label for="numero1">Primer número</label>
+		<input type="number" name="numero1" size="2">
+                </p>    
+                <p>
+		<label for="numero2">Segundo número</label>
+		<input type="number" name="numero2" size="2">
+                </p><br>
+                <p><input type="submit" value="Enviar"/></p>
+            </form>
 </html>

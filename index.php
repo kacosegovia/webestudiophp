@@ -189,7 +189,8 @@
                         <li><a href="ejercicios/ejercicio3.php" title="Tercer Ejercicio">Ejercicio 3 (bucle WHILE)</a></li>
                         <li><a href="ejercicios/ejercicio4.php" title="Cuarto Ejercicio">Ejercicio 4 (parámetros GET)</a></li>
                         <li><a href="ejercicios/ejercicio5.php" title="Quinto Ejercicio">Ejercicio 5 (parámetros GET 2)</a></li>
-                        <li><a href="ejercicios/ejercicio6.php" title="Sexto Ejercicio">Ejercicio 6 (bucle WHILE)</a></li></ul>';
+                        <li><a href="ejercicios/ejercicio6.php" title="Sexto Ejercicio">Ejercicio 6 (tabla HTML)</a></li>
+                        <li><a href="ejercicios/ejercicio7.php" title="Séptimo Ejercicio">Ejercicio 7 (parámetros GET 3)</a></li></ul>';
                     ?>
                 </div>
             </div>

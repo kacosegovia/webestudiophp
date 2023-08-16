@@ -5,7 +5,7 @@
             <!-- se utiliza para definir la codificación de caracteres del documento HTML. En este caso, el atributo
             charset se establece en "utf-8", que es una codificación de caracteres universalmente reconocida y compatible
             con una amplia gama de caracteres y símbolos utilizados en varios idiomas y sistemas de escritura.-->
-        <title>Tercer Ejercicio</title>
+        <title>Cuarto Ejercicio</title>
             <!--se utiliza para definir el título de la página web. El texto que se coloca dentro de esta etiqueta
             aparecerá en la barra de título del navegador y también se mostrará en los resultados de búsqueda
             cuando la página web se encuentre en los motores de búsqueda.-->
@@ -136,8 +136,8 @@
         <nav class="navbar">
             <img class="php-img" src="../img/php.png" width="50"></a><label id="navbar-label">Aprendiendo PHP</label>
         </nav>
-        <h2><a href="../index.php" title="inicio">Volver...</a></h2><br/>
-        <p>Recoger dos números por la url(GET) y hacer todas las operaciones básicas de una calculadora entre ellos.</p></br>
+        <h2><a href="../index.php" title="inicio">Volver...</a></h2><br>
+        <p>Recoger dos números por la url(GET) y hacer todas las operaciones básicas de una calculadora entre ellos.</p><hr/>
         <?php
             if(!empty(filter_input(INPUT_GET, 'numero1', FILTER_VALIDATE_INT)) && !empty(filter_input(INPUT_GET, 'numero2', FILTER_VALIDATE_INT))){
             $numero1 = filter_input(INPUT_GET, 'numero1', FILTER_VALIDATE_INT);

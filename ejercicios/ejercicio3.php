@@ -136,9 +136,9 @@
         <nav class="navbar">
             <img class="php-img" src="../img/php.png" width="50"></a><label id="navbar-label">Aprendiendo PHP</label>
         </nav>
-        <h2><a href="../index.php" title="inicio">Volver...</a></h2><br/>
+        <h2><a href="../index.php" title="inicio">Volver...</a></h2><br>
         <p>Escribir un programa que imprima por pantalla los cuadrados de los 40 primeros números naturales</p>
-        <p>PD. Utiliza bucle WHILE</p></br>
+        <p>PD. Utiliza bucle WHILE</p><hr/>
         <?php
             $i=0;
             while($i < 40){

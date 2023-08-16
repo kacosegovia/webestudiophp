@@ -136,9 +136,9 @@
         <nav class="navbar">
             <img class="php-img" src="../img/php.png" width="50"></a><label id="navbar-label">Aprendiendo PHP</label>
         </nav>
-        <h2><a href="../index.php" title="inicio">Volver...</a></h2><br/>
-        <p>Crear 2 variables 'pais' y 'continente' y mostrar su valor por pantalla.<br/>
-            Poner en un comentario qué tipo de dato contiene cada uno</p></br>
+        <h2><a href="../index.php" title="inicio">Volver...</a></h2><br>
+        <p>Crear 2 variables 'pais' y 'continente' y mostrar su valor por pantalla.</p>
+        <p>Poner en un comentario qué tipo de dato contiene cada uno</p><hr/><br>
         <?php
             $pais="Argentina"; //dato tipo string
             $continente="América del sur"; //dato tipo string

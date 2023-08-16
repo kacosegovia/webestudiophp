@@ -136,8 +136,8 @@
         <nav class="navbar">
             <img class="php-img" src="../img/php.png" width="50"></a><label id="navbar-label">Aprendiendo PHP</label>
         </nav>
-        <h2><a href="../index.php" title="inicio">Volver...</a></h2></br>
-        <p>Escribir un Script en PHP que nos muestre por pantalla todos los numeros pares que hay de 1 al 100.</p></br>
+        <h2><a href="../index.php" title="inicio">Volver...</a></h2><br>
+        <p>Escribir un Script en PHP que nos muestre por pantalla todos los numeros pares que hay de 1 al 100.</p><hr/>
         <?php
             for($i = 1; $i <=100;$i++){ 
                 if($i%2==0){ // Dividimos $i entre 2, si sobra 0, se muestra.
