@@ -162,7 +162,7 @@
                         <ul><li>Super Mario 64</li>
                         <li>The Legend of Zelda - Ocarina of Time</li>
                         <li>Mario Kart 64</li></ul><br>';
-                        echo '<p>Lista actualizada al '.date('d/m/Y').'</p><br/><br/>';
+                        echo '<p>Lista actualizada al '.date('d/m/Y').'</p><br><br>';
                     ?>
                 </div>   
                 <div class="content">
@@ -171,13 +171,14 @@
                         $num1=12;
                         $num2=17;
                         echo '<div><h2>Operaciones Aritméticas</h2><br><br>';
-                        echo 'Primer número: '.$num1.'<br/>';
-                        echo 'Segundo número: '.$num2.'<br/><br/>';
-                        echo 'Suma: '.($num1+$num2).'<br/>';
-                        echo 'Resta: '.($num1-$num2).'<br/>';
-                        echo 'Multiplicación: '.($num1*$num2).'<br/>';
-                        echo 'División: '.($num1/$num2).'<br/>';
-                        echo 'Sobrante o resto: '.($num1%$num2).'<br/></div>';
+                        echo 'Primer número: '.$num1.'<br>';
+                        echo 'Segundo número: '.$num2.'<br><br>';
+                        echo 'Suma: '.($num1+$num2).'<br>';
+                        echo 'Resta: '.($num1-$num2).'<br>';
+                        echo 'Multiplicación: '.($num1*$num2).'<br>';
+                        echo 'División: '.($num1/$num2).'<br>';
+                        echo 'Sobrante o resto: '.($num1%$num2).'<br></div><hr/>';
+                        echo '<h3><a href="funciones/funciones.php" title="funciones PHP">Funciones</a></h3>';
                     ?>
                 </div>
                 <div class="content">

@@ -9,7 +9,7 @@
             <!--se utiliza para definir el título de la página web. El texto que se coloca dentro de esta etiqueta
             aparecerá en la barra de título del navegador y también se mostrará en los resultados de búsqueda
             cuando la página web se encuentre en los motores de búsqueda.-->
-        <meta content="Aprendiendo PHP, ejercicio 2" name="description">
+        <meta content="Aprendiendo PHP, ejercicio 7" name="description">
             <!--Esta etiqueta define la descripción de la página para los motores de búsqueda y otros servicios que pueden
             usar esta información. La descripción proporcionada, en este caso "Aprendiendo PHP", se mostrará en los
             resultados de búsqueda o en vistas previas cuando alguien comparta el enlace a la página en redes sociales,
