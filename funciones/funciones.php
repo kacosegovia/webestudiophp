@@ -1,5 +1,4 @@
 <?php require_once '../includes/cabecera.php';?>
-<h3><a href="/Udemy.yo/index.php" title="inicio">Inicio</a></h3><hr/>
 <div class="page-content">
     <div class="content">
         <?php

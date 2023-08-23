@@ -1,7 +1,7 @@
 <?php require_once '../includes/cabecera.php';?>
-<h3><a href="/Udemy.yo/index.php" title="inicio">Inicio</a></h3><hr/>
 <div class="page-content">
     <div class="content">
+        <a href="ejercicio7.php" class="button">Volver atrás</a><hr/>
         <h2>Hacer un script que nos muestre todos los números IMPARES que hay entre 2 números recibidos por GET</h2><hr/>
         <?php
             if(!empty(filter_input(INPUT_GET, 'numero1', FILTER_VALIDATE_INT)) && !empty(filter_input(INPUT_GET, 'numero2', FILTER_VALIDATE_INT))){

@@ -2,38 +2,15 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-            <!-- se utiliza para definir la codificación de caracteres del documento HTML. En este caso, el atributo
-            charset se establece en "utf-8", que es una codificación de caracteres universalmente reconocida y compatible
-            con una amplia gama de caracteres y símbolos utilizados en varios idiomas y sistemas de escritura.-->
         <title>kacosegovia.com - Aprendiendo PHP</title>
-            <!--se utiliza para definir el título de la página web. El texto que se coloca dentro de esta etiqueta
-            aparecerá en la barra de título del navegador y también se mostrará en los resultados de búsqueda
-            cuando la página web se encuentre en los motores de búsqueda.-->
         <meta content="Aprendiendo PHP" name="description">
-            <!--Esta etiqueta define la descripción de la página para los motores de búsqueda y otros servicios que pueden
-            usar esta información. La descripción proporcionada, en este caso "Aprendiendo PHP", se mostrará en los
-            resultados de búsqueda o en vistas previas cuando alguien comparta el enlace a la página en redes sociales,
-            por ejemplo.-->
         <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-            <!--Esta etiqueta indica al navegador cómo debe interpretar la página y establecer el modo de compatibilidad.
-            En este caso, se establece el modo de compatibilidad en "IE=edge" y "chrome=1". Esto significa que se solicita
-            al navegador que utilice la versión más reciente de Internet Explorer disponible y, si es posible, el motor de
-            renderizado de Chrome en lugar del motor de IE. Esto ayuda a asegurar que la página se muestre de manera más
-            consistente en diferentes navegadores y versiones.-->
         <meta content="width=device-width, initial-scale=1" name="viewport">
-            <!--Esta etiqueta controla cómo se ajusta y escala la página en diferentes dispositivos y tamaños de pantalla.
-            En este caso, se establece el ancho inicial del viewport para que coincida con el ancho del dispositivo
-            ("width=device-width") y se establece el nivel inicial de zoom en 1 ("initial-scale=1").
-            Esto asegura que la página se adapte correctamente a dispositivos móviles y se visualice adecuadamente en
-            diferentes resoluciones de pantalla.-->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-            <!--La biblioteca de Bootstrap proporciona una serie de estilos CSS predefinidos y componentes visuales
-            que pueden aplicarse a una página web para mejorar su apariencia y diseño. La hoja de estilos "bootstrap.min.css"
-            contiene toda la información de estilo necesaria para aplicar los estilos de Bootstrap en la página.-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-            <!--Google Fonts es un servicio gratuito proporcionado por Google que ofrece una amplia variedad de fuentes
-            tipográficas para su uso en sitios web. En este enlace, se está solicitando la fuente "Open Sans" en varias
-            variantes y conjuntos de caracteres.-->
         <style>
             body {
                 font-family: 'Open Sans', 'Helvetica', sans-serif;
@@ -41,7 +18,7 @@
                 padding: 0;
                 margin: 0;
                 line-height: 1.4;
-                height: 100%;
+                background-color: #fcfcfc; 
             }
             h1, h2, h3, h4, h5, h6, p {
                 padding: 0;
@@ -51,29 +28,72 @@
             h1 {
                 font-size: 30px;
                 font-weight: 700!important;
+                color:#333;
             }
             h2 {
                 font-size: 24px;
                 font-weight: 600;
             }
             h3 {
-                font-size: 20px;
+                font-size: 22px;
                 font-weight: 500;
-                margin-bottom: 10px;
+                line-height: 28px;
+                margin-left: 5px;
+            }
+            hr {
+                margin-top: 35px;
+                margin-bottom: 35px;
+                border: 0;
+                border-top: 1px solid #bfbebe;
+            }
+            a {
+                color: #676767;
+                text-decoration: none;
+                cursor: pointer;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                -ms-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+            }
+            a:hover {
+                text-decoration: none;
+                color: #000 !important;
+            }
+            .nav-li-a {
+                color: white;
+                margin-left: 3px;
+                padding-top: 11px;
+                padding-bottom: 11px;
+                font-size: 15px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            .navbar-nav>li>a i {
+                margin-right: 5px;
             }
             .navbar {
                 position: relative;
                 min-height: 40px;
-                margin-bottom: 15px;
-                border: 2px solid transparent;
+                margin-bottom: 20px;
                 border-radius: 1px !important;
-                background-color: #434343;
-                padding: 4px;
                 font-size: 18px;
+                border: 1px solid transparent;
             }
-            #navbar-label {
-                color: #888;
-                margin-left: 13px;
+            .navbar-inverse {
+                background-color: #464646;
+            }
+            .navbar-brand {
+                display: flex;
+                color: #eaeaea;
+                float: left;
+                height: 40px;
+                padding: 15x 15px;
+                line-height: 18px;
+                align-items: center;
+            }
+            .navbar-brand img {
+                margin-right: 8px;
             }
             .email-with-margin {
                 margin-right: 13px;
@@ -85,14 +105,15 @@
                     padding: 30px;
                     border: 2px solid #ccc;
                     margin: auto;
-                    margin-top: 20px;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
                     border-radius: 8px;
                 }
                 .page-content {
                     display: flex;
                     flex-direction: column;
                     align-items: stretch;
-                    min-height: 73vh;
+                    min-height: 80vh;
                 }
                 .content-wrapper {
                     display: flex;
@@ -100,19 +121,26 @@
                     justify-content: space-between;
                     flex: 0 0 calc(33.33% - 10px);
                 }
+                table {
+                    border-collapse: collapse;
+                }
+                td {
+                    border: 2px double black;
+                    padding: 10px;
+                }
             }
             @media (max-width: 767px) {
                 .content {
                     padding: 15px;
                     border: 1px solid #ccc;
                     margin: 15px;
-                    border-radius: 9px;
+                    border-radius: 8px;
                 }
                 .page-content {
                     display: flex;
                     flex-direction: column;
                     align-items: stretch;
-                    min-height: 66vh;
+                    min-height: 73vh;
                     padding-bottom: 10px;
                 }
                 .content-wrapper {
@@ -120,29 +148,25 @@
                     flex-direction: column;
                     align-items: stretch;
                 }
+                table {
+                    width: 100%; /* Hacer que la tabla ocupe todo el ancho disponible */
+                    border-collapse: collapse; /* Colapsar los bordes de la tabla */
+                    margin:-14px !important;
+                }
+                td {
+                    border: .5px double black; /* Aplicar doble borde a las celdas */
+                    padding: 1px; /* Agregar espacio interno a las celdas */
+                }
             }
             .footer {
-                font-size: 12px;
-                color: gray !important;
-                margin-bottom: 0;
-                margin-top: auto;
+                font-size: 13px;
+                color: #555 !important;
+                margin-bottom: 45px;
+                margin-top: 25px;
                 padding: 0;
-                background-color: #f5f5f5;
+                background-color: #eaeaea;
                 text-align: center;
-            }
-            ul li a {
-                font-weight: 600;
-                font-size: 16px;
-            }
-            h2 a {
-                margin: 10px;
-            }
-            .td {
-                padding: 5px;
-                margin: 5px;
-            }
-            h3 {
-                margin-left: 5px;
+                line-height: 1.4;
             }
             .p-recibir {
                 font-weight: 300;
@@ -150,9 +174,54 @@
                 margin-left: 15px;
                 margin-top: 5px;
             }
+            .p-recibirtwo {
+                font-weight: 300;
+                font-size: 16px; 
+                margin-left: 30px;
+                margin-top: 5px;
+            }
+            .p-recibir-index {
+                font-weight: 300;
+                font-size: 16px; 
+                margin-left: 15px;
+                margin-top: 5px;
+            }
+            .button {
+                display: inline-block;
+                padding: 6px 12px;
+                background-color: #464646;
+                color: #fcfcfc;
+                text-decoration: none;
+                border-radius: 8px;
+                border: solid 1px;
+                cursor: pointer;
+            }
+            .button:hover {
+                background-color: #676767;
+            }
         </style>
     </head>
     <body>
-        <nav class="navbar">
-            <img class="php-img" src="/Udemy.yo/img/php.png" width="50"></a><label id="navbar-label">Aprendiendo PHP</label>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/Udemy.yo/index.php" rel="nofollow">
+                        <img src="/Udemy.yo/img/php.png" width="40" alt="aprendiendo PHP">
+                        <span>Aprendiendo PHP</span>
+                    </a>
+                </div>                
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="nav-li-a" href="/Udemy.yo/index.php"><i aria-hidden="true" class="fa fa-home"></i>Inicio</a></li>
+                        <li><a class="nav-li-a" href="/Udemy.yo/ejercicios/ejercicios.php"><i aria-hidden="true" class="fa fa-briefcase"></i>Ejercicios básicos</a></li>
+                        <li><a class="nav-li-a" href="/Udemy.yo/funciones/funciones.php"><i aria-hidden="true" class="fa fa-code-fork"></i>Funciones y Arrays</a></li>
+                        <li><a class="nav-li-a" href="/Udemy.yo/formulario.php"><i aria-hidden="true" class="fa fa-check-square-o"></i>Regístrate</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>

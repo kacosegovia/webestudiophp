@@ -1,7 +1,7 @@
 <?php require_once '../includes/cabecera.php';?>
-<h3><a href="/Udemy.yo/index.php" title="inicio">Inicio</a></h3><hr/>
 <div class="page-content">
     <div class="content">
+        <a href="ejercicios.php" class="button">Volver atrás</a><hr/>
         <h2>Escribir un Script en PHP que nos muestre por pantalla todos los numeros pares que hay de 1 al 100.</h2><hr/>
         <?php
             for($i = 1; $i <=100;$i++){ 

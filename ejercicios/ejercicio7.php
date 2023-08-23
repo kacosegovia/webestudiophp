@@ -1,7 +1,7 @@
 <?php require_once '../includes/cabecera.php';?>
-<h3><a href="/Udemy.yo/index.php" title="inicio">Inicio</a></h3><hr/>
 <div class="page-content">
     <div class="content">
+        <a href="ejercicios.php" class="button">Volver atrás</a><hr/>
         <h2>Hacer un script que nos muestre todos los números IMPARES que hay entre 2 números recibidos por GET</h2><hr/>
         <h3>Ingresa 2 números, el segundo número debe ser mayor</h3><br>
             <form method="GET" action="ejercicio7-1.php" name="numeros">
@@ -9,7 +9,7 @@
 		<input type="number" name="numero1" size="2" class="input-label"></p>    
                 <p><label for="numero2">Segundo número</label>
 		<input type="number" name="numero2" size="2" class="input-label"></p><br>
-                <p><input type="submit" value="Enviar"/></p>
+                <p><input class="button" type="submit" value="Enviar"/></p>
             </form>
     </div>
 </div>

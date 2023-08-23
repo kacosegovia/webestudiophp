@@ -1,7 +1,7 @@
 <?php require_once '../includes/cabecera.php';?>
-<h3><a href="/Udemy.yo/index.php" title="inicio">Inicio</a></h3><hr/>
 <div class="page-content">
     <div class="content">
+        <a href="ejercicios.php" class="button">Volver atrás</a><hr/>
         <h2>Escribir un programa que imprima por pantalla los cuadrados de los 40 primeros números naturales</h2>
         <p>PD. Utiliza bucle WHILE</p><hr/>
         <?php

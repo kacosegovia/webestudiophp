@@ -1,6 +1,5 @@
 <?php require_once 'includes/cabecera.php';?>
-<h3><a href="index.php" title="inicio">Inicio</a></h3><hr/>
-<div class="page-content">
+<div class="page-content"><br>
     <div class="content">
         <h1>Ingresa tus datos</h1><br>
         <form method="POST" action="recibir.php" name="formulario">
@@ -16,7 +15,7 @@
             <label class="email-with-margin" for="mail">E-mail</label>
             <input type="text" name="mail" size="20" placeholder="Ingresa tu E-mail..." class="input-label">
             </p><br>
-            <p><input type="submit" value="Enviar datos" class="centered-button"/></p><br>
+            <p><input type="submit" value="Enviar datos" class="button"/></p><br>
         </form>
     </div>
 </div>
