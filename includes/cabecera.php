@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>kacosegovia.com - Aprendiendo PHP</title>
+        <link rel="icon" href="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23000' d='M256 0C114.62 0 0 114.62 0 256s114.62 256 256 256 256-114.62 256-256S397.38 0 256 0zm0 472.32C132.48 472.32 39.68 379.52 39.68 256 39.68 132.48 132.48 39.68 256 39.68 379.52 39.68 472.32 132.48 472.32 256 472.32 379.52 379.52 472.32 256 472.32zm0-66.048l-78.992-78.912 35.248-35.264 43.744 43.744 125.056-125.056 35.248 35.264z'%3E%3C/path%3E%3C/svg%3E" type="image/svg+xml">
         <meta content="Aprendiendo PHP" name="description">
         <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
         <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -77,7 +78,6 @@
                 min-height: 40px;
                 margin-bottom: 20px;
                 border-radius: 1px !important;
-                font-size: 18px;
                 border: 1px solid transparent;
             }
             .navbar-inverse {
@@ -94,6 +94,9 @@
             }
             .navbar-brand img {
                 margin-right: 8px;
+            }
+            #nav-span {
+                font-size: 23px;
             }
             .email-with-margin {
                 margin-right: 13px;
@@ -231,7 +234,7 @@
                     </button>
                     <a class="navbar-brand" href="/Udemy.yo/index.php" rel="nofollow">
                         <img src="/Udemy.yo/img/php.png" width="40" alt="aprendiendo PHP">
-                        <span>Aprendiendo PHP</span>
+                        <span id = "nav-span">kacosegovia.com</span>
                     </a>
                 </div>                
                 <div class="collapse navbar-collapse" id="myNavbar">

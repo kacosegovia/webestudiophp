@@ -38,21 +38,10 @@
             echo "</pre>";*/
         ?>
         <table border ="2" class ="custom-table">
-            <tr>
-                <?php foreach ($categorias as $cabecera){
-                    echo "<th>".$cabecera."</th>";
-                    }
-                ?>
-            </tr>
-            <tr>
+                <?php require_once 'includes/array5cabeceras.php'; ?>
                 <?php require_once 'includes/array5file1.php'; ?>
-            </tr>
-            <tr>
                 <?php require_once 'includes/array5file2.php'; ?>
-            </tr>
-            <tr>
                 <?php require_once 'includes/array5file3.php'; ?>
-            </tr>
         </table>       
     </div>
 </div>
