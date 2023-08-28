@@ -2,10 +2,10 @@
 <div class="page-content">
     <div class="content">
         <a href="ejercicios.php" class="button">Volver atrás</a><hr/>
-        <h2>Mostrar una tabla HTML con las tablas de multiplicar del 1 al 10.</h2><hr/>
+        <h2>Mostrar una tabla HTML con las tablas de multiplicar del 1 al 10.</h2><hr/>        
+        <table border='1' class = "exercise6-table">
+            <tr>
         <?php
-            echo "<table border='1'>"; //Inicio de la tabla.
-            echo "<tr>";
                 for($cabecera = 1; $cabecera <=10;$cabecera++){
                     echo "<td>Tabla del $cabecera</td>";
                 }

@@ -9,7 +9,7 @@
         <div class="content">
             <?php
                 // Metodo para imprimir en pantalla usando comillas dobles.
-                echo "<h2>Listado de Juegos</h2><br>
+                echo "<h1>Listado de Juegos</h1><br>
                     <h3>$consola1</h3>
                     <ul><li>Super Mario All Stars + Super Mario World</li>
                     <li>Donkey Kong Country</li>
@@ -29,7 +29,7 @@
                 // Operadores aritmeticos
                 $num1=12;
                 $num2=17;
-                echo '<div><h2>Operaciones Aritméticas</h2><br><br>';
+                echo '<div><h1>Operaciones Aritméticas</h1><br><br>';
                 echo 'Primer número: '.$num1.'<br>';
                 echo 'Segundo número: '.$num2.'<br><br>';
                 echo 'Suma: '.($num1+$num2).'<br>';

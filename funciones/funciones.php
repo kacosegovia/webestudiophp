@@ -1,6 +1,7 @@
 <?php require_once '../includes/cabecera.php';?>
 <div class="page-content">
     <div class="content">
+        <h1>Funciones PHP</h1><hr/>
         <?php
             /* 
             * FUNCIONES:
@@ -16,10 +17,10 @@
 
             //Ejemplo 1
             function muestraNombres(){
-                echo "Marcos <br>";
-                echo "Andrés <br>";
+                echo "Marco <br>";
+                echo "José <br>";
                 echo "Segovia <br>";
-                echo "Díaz <br><hr/>";
+                echo "Frías <br><hr/>";
             }
             //Llamar función 1
             muestraNombres();
@@ -53,7 +54,7 @@
             echo calculadora(6666, 443);
             
             //Ejemplo 3.1 sprintf()
-            $nombre = "Marcos";
+            $nombre = "Marco";
             $edad = 38;
             $altura = 1.83;
             $cadena_formateada = sprintf("<br><h1>Hola, soy %s. Tengo %d años y mido %.2f metros.</h1><br><hr/>", $nombre, $edad, $altura);

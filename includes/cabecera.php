@@ -105,7 +105,7 @@
                     padding: 30px;
                     border: 2px solid #ccc;
                     margin: auto;
-                    margin-top: 30px;
+                    margin-top: 60px;
                     margin-bottom: 30px;
                     border-radius: 8px;
                 }
@@ -121,12 +121,15 @@
                     justify-content: space-between;
                     flex: 0 0 calc(33.33% - 10px);
                 }
-                table {
+                .exercise-table {
                     border-collapse: collapse;
                 }
-                td {
+                .exercise-table td {
                     border: 2px double black;
                     padding: 10px;
+                }
+                #content-exercises {
+                    padding: 45px;
                 }
             }
             @media (max-width: 767px) {
@@ -148,14 +151,14 @@
                     flex-direction: column;
                     align-items: stretch;
                 }
-                table {
-                    width: 100%; /* Hacer que la tabla ocupe todo el ancho disponible */
-                    border-collapse: collapse; /* Colapsar los bordes de la tabla */
+                .exercise6-table {
+                    width: 100%;
+                    border-collapse: collapse;
                     margin:-14px !important;
                 }
-                td {
-                    border: .5px double black; /* Aplicar doble borde a las celdas */
-                    padding: 1px; /* Agregar espacio interno a las celdas */
+                .exercise6-table td {
+                    border: .5px double black;
+                    padding: 1px;
                 }
             }
             .footer {
@@ -199,6 +202,22 @@
             .button:hover {
                 background-color: #676767;
             }
+            .custom-table {
+                table-layout: fixed;
+            }
+            .custom-table td {
+                width: 150px;
+                padding: 2px;
+                padding-left: 10px;
+            }
+            .custom-table th {
+                width: 130px;
+                padding: 2px;
+                padding-left: 10px;
+            }
+            .custom-table tr {
+                height: 20px; /* Altura aproximada de las filas */
+            }
         </style>
     </head>
     <body>
@@ -218,8 +237,9 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="nav-li-a" href="/Udemy.yo/index.php"><i aria-hidden="true" class="fa fa-home"></i>Inicio</a></li>
-                        <li><a class="nav-li-a" href="/Udemy.yo/ejercicios/ejercicios.php"><i aria-hidden="true" class="fa fa-briefcase"></i>Ejercicios básicos</a></li>
-                        <li><a class="nav-li-a" href="/Udemy.yo/funciones/funciones.php"><i aria-hidden="true" class="fa fa-code-fork"></i>Funciones y Arrays</a></li>
+                        <li><a class="nav-li-a" href="/Udemy.yo/funciones/funciones.php"><i aria-hidden="true" class="fa fa-briefcase"></i>Funciones</a></li>
+                        <li><a class="nav-li-a" href="/Udemy.yo/cookies/cookies.php"><i aria-hidden="true" class="fa fa-briefcase"></i>Cookies</a></li>
+                        <li><a class="nav-li-a" href="/Udemy.yo/ejercicios/ejercicios.php"><i aria-hidden="true" class="fa fa-briefcase"></i>Ejercicios</a></li>
                         <li><a class="nav-li-a" href="/Udemy.yo/formulario.php"><i aria-hidden="true" class="fa fa-check-square-o"></i>Regístrate</a></li>
                     </ul>
                 </div>
