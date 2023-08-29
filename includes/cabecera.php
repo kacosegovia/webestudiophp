@@ -31,6 +31,10 @@
                 font-weight: 700!important;
                 color:#333;
             }
+            #h1-cookies {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
             h2 {
                 font-size: 24px;
                 font-weight: 600;
@@ -163,6 +167,9 @@
                     border: .5px double black;
                     padding: 1px;
                 }
+                #h1-cookies {
+                    margin-bottom: 35px;
+                }
             }
             .footer {
                 font-size: 13px;
@@ -220,6 +227,9 @@
             }
             .custom-table tr {
                 height: 20px; /* Altura aproximada de las filas */
+            }
+            #content-cookies {                
+                text-align: center;
             }
         </style>
     </head>

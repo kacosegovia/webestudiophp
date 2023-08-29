@@ -2,7 +2,7 @@
 <div class="page-content"><br>
     <div class="content">
         <h1>Ingresa tus datos</h1><br>
-        <form method="POST" action="recibir.php" name="formulario">
+        <form method="POST" action="recibir.php" name="formulario" id="content-cookies">
             <p>
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" size="20" placeholder="Ingresa tu nombre..." class="input-label">
