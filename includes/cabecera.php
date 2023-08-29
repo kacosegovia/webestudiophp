@@ -105,8 +105,22 @@
             }
             .email-with-margin {
                 margin-right: 13px;
-            }.input-label {
-                margin: 8px;
+            }
+            #input-label-user {
+                padding-left: 10px !important;
+            }
+            #input-label-mail {
+                padding-left: 12px !important;
+            }
+            #input-label-password {
+                padding-left: 18px !important;
+            }
+            #div-padding {
+                margin-right: 60px;
+                margin-left: 60px;
+            }
+            #input-label {
+                width: 50px;
             }
             @media (min-width: 768px) {
                 .content {

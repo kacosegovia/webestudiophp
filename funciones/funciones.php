@@ -1,6 +1,6 @@
 <?php require_once '../includes/cabecera.php';?>
 <div class="page-content">
-    <div class="content">
+    <div class="content" id="content-cookies">
         <h1>Funciones PHP</h1><hr/>
         <?php
             /* 

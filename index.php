@@ -1,3 +1,9 @@
+<?php 
+    //iniciar sesiones.
+    session_start();
+    //Terminar sesión
+    session_destroy();
+?>
 <?php require_once 'includes/cabecera.php';
     // Variables de PHP y cómo declararlas.
     $consola1 = 'Super Nintendo (SNES)';
@@ -27,18 +33,50 @@
         </div>   
         <div class="content">
             <?php
-                // Operadores aritmeticos
-                $num1=12;
-                $num2=17;
                 echo '<div><h1>Operaciones Aritméticas</h1><br><br>';
-                echo 'Primer número: '.$num1.'<br>';
-                echo 'Segundo número: '.$num2.'<br><br>';
-                echo 'Suma: '.($num1+$num2).'<br>';
-                echo 'Resta: '.($num1-$num2).'<br>';
-                echo 'Multiplicación: '.($num1*$num2).'<br>';
-                echo 'División: '.($num1/$num2).'<br>';
-                echo 'Sobrante o resto: '.($num1%$num2).'<br></div>';
             ?>
+            <div>
+                <div id='content-cookies'>
+                    <form method="post" action="">
+                        <p><label class="email-with-margin" for="numero1">Primer número</label>
+                        <input type="number" name="numero1" size="1" id="input-label"> 
+                        <p><label for="numero2">Segundo número</label>
+                        <input type="number" name="numero2" size="1" id="input-label" style="margin-left: 4px;"></p>
+                        <p><br><br>
+                        <div>
+                            <input class="button" type="submit" value="Calcular">
+                            <a href='borrar.php' class='button' id='content-cookies'>Borrar</a>
+                        </div>
+                    </form>
+                    <?php
+                        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                            if (isset($_POST['numero1']) && isset($_POST['numero2'])) {
+                                $numero1 = $_POST['numero1'];
+                                $numero2 = $_POST['numero2'];
+                                function calculadora($num1, $num2) {
+                                    $result = "<hr/><h1>Números ingresados: $num1 y $num2</h1><br>";
+                                    if ($num2 != 0) {
+                                        $suma = ($num1 + $num2);
+                                        $resta = ($num1 - $num2);
+                                        $multiplicacion = ($num1 * $num2);
+                                        $division = ($num1 / $num2);
+                                        $sobrante = ($num1 % $num2);
+                                        $result .= "La suma de ambos números es: $suma<br>"
+                                                . "La resta de ambos números es: $resta<br>"
+                                                . "Su Multiplicación es: $multiplicacion<br>"
+                                                . "El producto entre ambos es: $division<br>"
+                                                . "y lo que sobra de esa división: $sobrante<br>";
+                                    } else {
+                                        $result .= "No se puede dividir por cero.";
+                                    }
+                                    return $result;
+                                }
+                                echo calculadora($numero1, $numero2);
+                            }
+                        }
+                    ?>
+                </div>
+            </div>
         </div>
     </div>
 </div>
