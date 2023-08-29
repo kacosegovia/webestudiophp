@@ -101,6 +101,7 @@
             }
             #nav-span {
                 font-size: 23px;
+                padding-left: 8px;
             }
             .email-with-margin {
                 margin-right: 13px;

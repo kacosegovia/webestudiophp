@@ -5,6 +5,7 @@
     $verdadero = true;
 ?>
 <div class="page-content">
+    <h1 id="content-cookies">Aprendiendo PHP con Udemy!</h1><br>
     <div class="content-wrapper">
         <div class="content">
             <?php
@@ -20,7 +21,7 @@
                     <li>The Legend of Zelda - Ocarina of Time</li>
                     <li>Mario Kart 64</li></ul><br>';
                 $fecha_actual = strtotime(date('d-m-Y')); // Obtiene la fecha actual en formato numérico
-                $fecha_anterior = date('d/m/Y', strtotime('-2 day', $fecha_actual)); // Resta un día y formatea
+                $fecha_anterior = date('d/m/Y', strtotime('-1 day', $fecha_actual)); // Resta un día y formatea
                 echo '<p>Lista actualizada al '.$fecha_anterior.'</p><br><br>';
             ?>
         </div>   
